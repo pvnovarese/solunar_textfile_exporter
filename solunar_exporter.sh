@@ -24,6 +24,15 @@
 #    initial release
 #
 # Requires solunar https://github.com/kevinboone/solunar_cmdline
+#
+# eventually we will change this to solunar2 but there's no distance
+# calc in that tool yet (as of 29-june-2020)
+#
+# solunar2 should be easier to parse, something like this:
+# ./solunar -l 35.05 -o -89.47 -t GMT+5 -j | \
+# jq '.sun.sunrise, .sun.sunset, \
+# .moon.rises[0], .moon.sets[0], \
+# .moon."moon phase", .moon."moon phase name", .moon."moon age"'
 
 
 
